@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Basics</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$("#AddClass button").click(function(){
+				$('#AddClass p').addClass("red");
+			});
+
+			$('#After button').click(function(){
+				$('#After h1').after('Hello!');
+			});
+			$('#append button').click(function(){
+				$('#append p').append("Hello!");
+			});
+			$('#attr button').click(function(){
+				$('#attr img').attr("width","150");
+			});
+			$('#before').click(function(){
+				$('#before p').before("Hello!");
+			});
+			$('#html').click(function(){
+				$('#html p').html("Hello World!");
+			});
+			$('#text').click(function(){
+				$('#text p').html("Hello World!");
+			});
+			$('#val').click(function(){
+				$('input').val("derrickliang");
+			});
+			$('#toggle').click(function(){
+				$('#toggle p').toggle();
+			});
+			$('.hide').click(function(){
+				$('#hide p').hide();
+			});
+			$('.show').click(function(){
+				$('#hide p').show();
+			});
+			$('.down').click(function(){
+				$('#slideDown p').slideDown();
+			});
+			$('.up').click(function(){
+				$('#slideDown p').slideUp();
+			});
+			$('#slidetoggle').click(function(){
+				$('#slidetoggle p').slideToggle();
+			});
+			$('.out').click(function(){
+				$('#fadeout p').fadeOut();
+			});
+			$('.in').click(function(){
+				$('#fadeout p').fadeIn();
+			});
+			$('input').focus(function(){
+				$("span").css("display","inline").fadeOut(2000);
+			});
+			$('#click p').click(function(){
+				alert("The paragraph was clicked");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<h1 id="header" align="center">jQuery BASIC FUNCTIONS</h1>
+
+	<div id="AddClass">
+	<h1>.addClass</h1>
+	<button>addClass</button>
+	<p>Click the button to add class 'red' to this paragraph</p>
+	<hr>
+	</div>
+
+	<div id="After">
+	<h1>.after</h1>
+	<button>after</button>
+	<p>Click the button to insert 'Hello!' after the h1.</p>
+	<hr>
+	</div>
+
+	<div id="append">
+		<h1>.append</h1>
+		<button>.append</button>
+		<p>Click the button to add "Hello!" to the end of this paragraph</p>
+		<hr>
+	</head>
+	</div>
+
+	<div id="attr">
+		<h1>.attr</h1>
+		<button>.attr</button>
+		<p>Click the button to use the attr function to change the width of the image</p>
+		<img src="/Users/derrickliang/Desktop/codingdojo/jQuery/jQuerybasics/ggb.jpeg">
+		<hr>
+	</div>
+
+	<div id="before">
+		<h1>.before</h1>
+		<button>.before</button>
+		<p>Click the button to add "Hello!" before the paragraph.</p>
+		<hr>
+	</div>
+
+	<div id="html">
+		<h1>.html</h1>
+		<button>.html</button>
+		<p>Click the button to change this paragraph to Hello World!</p>
+		<hr>
+	</div>
+
+	<div id="text">
+		<h1>.text</h1>
+		<button>.text</button>
+		<p>The text() method sets or returns the text content of the selected elements.</p>
+		<hr>
+	</div>
+
+	<div id="val">
+		<h1>.val</h1>
+		<button>.val</button>
+		<p>The val() method returns or sets the value attribute of the selected elements.</p>
+		<input type="text" name="user">
+		<hr>
+	</div>
+	<div id="toggle">
+		<h1>.toggle</h1>
+		<p>Toggle between hide and show for all p elements</p>
+		<button>.toggle</button>
+		<hr>
+	</div>
+	<div id="hide">
+		<h1>.hide</h1>
+		<p>The hide() method hides the selected elements.</p>
+		<p>The show() method shows the hidden, selected elements.</p>
+		<button class="hide">.hide</button><button class="show">.show</button>
+		<hr>
+	</div>
+	<div id="slideDown">
+		<h1>.slideDown</h1>
+		<p>The slideDown() method slides-down (shows) the selected elements.</p>
+		<button class="down">.slideDown</button><button class="up">.slideUp</button>
+		<hr>
+	</div>
+	<div id="slidetoggle">
+		<h1>.slideToggle</h1>
+		<p>The slideToggle() method toggles between slideUp() and slideDown() for the selected elements.</p>
+		<button>.slideToggle Up and Down</button>
+		<hr>
+	</div>
+	<div id="fadeout">
+		<h1>.fadeOut</h1>
+		<p>The fadeOut() method gradually changes the opacity, for selected elements, from visible to hidden (fading effect).</p>
+		<button class="in">.fadeIn</button><button class="out">.fadeOut</button>
+		<hr>
+	</div>
+	<div id="focus">
+		<h1>.focus</h1>
+		<p>The focus event occurs when an element gets focus (when selected by a mouse click or by "tab-navigating" to it).
+			The focus() method triggers the focus event, or attaches a function to run when a focus event occurs.</p>
+		<input>
+		<span>This is focus</span>
+		<hr>
+	</div>
+	<div id="click">
+		<h1>.click</h1>
+		<p>The click event occurs when an element is clicked. The click() method triggers the click event, or attaches a function to run when a click event occurs.</p>
+		<hr>
+	</div>
+
+
+
+</body>
+</html>

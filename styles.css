@@ -1,0 +1,24 @@
+*{
+	font-family: sans-serif;
+}
+
+button{
+	display: inline;
+	width: 100px;
+	height:25px;
+	box-shadow: 3px 3px 3px;
+}
+
+h1{
+	margin-left: 100px;
+	color: #0764c6;
+}
+
+#header{
+	
+}
+
+
+.red{
+	color: red;
+}
